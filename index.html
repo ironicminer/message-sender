@@ -5,18 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     
 </head>
-<body>
-    <h3>Select your customer</h3>
-    <select name="Name" id="Name"></select>
-    <h3>Select property</h3>
-    <select name="Property" id="Property"></select>
-    <button onclick="GetSelectedValue()" id="submit">Submit</button>
-    <h2 id="output"></h2>
-    <h3>Custom message area.</h3>
-    <textarea class="text"name="custom" id="customMessage" cols="30" rows="5"></textarea>
-    <button onclick="GetInputValue()" id="submit">Submit</button>
+<body style="background-color:aquamarine">
+    <div class="container">
+        <h3>Select your customer</h3>
+        <select name="Name" id="Name"></select>
+        <h3>Select property</h3>
+        <select name="Property" id="Property"></select>
+        <button type="button" class="btn btn-primary" onclick="GetSelectedValue()" id="submit">Submit</button>
+        <h2 id="output"></h2>
+        <h3>Custom message area.</h3>
+        <textarea class="border border-secondary" class="text"name="custom" id="customMessage" cols="30" rows="5"></textarea>
+    <button type="button" class="btn btn-primary" onclick="GetInputValue()" id="submit">Submit</button>
+    </div>
+    
     <script src="./index.js"></script>
 </body>
 </html>
