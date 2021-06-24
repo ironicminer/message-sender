@@ -25,7 +25,7 @@ fetch(url)
       // Examine the text in the response  
       response.json().then(function (data) {
         let option;
-      // console.log(data[0])
+      
         for (let i = 0; i < data.length; i++) {
           option = document.createElement('option');
           option.text = data[i].firstName;
@@ -76,9 +76,7 @@ fetch(url1)
   });
 
 function GetSelectedValue() {
-  // var e = document.getElementById("option");
-  // var result = e.options[e.selectedIndex].value;
-  // document.getElementById("output").innerHTML = result;
+  
      let values = [];
       for(let i =0; i < dropdown.options.length; i++){
           if(dropdown.options[i].selected){
@@ -110,11 +108,7 @@ function GetSelectedValue() {
           })
         }
       )
-    // let messageTemplate = {
-    //     table: []
-    // };
     
-    // fs.writeFile('Message.json', json, 'utf8')
     
     
    document.getElementById("output").innerHTML = values + ", Your room " + rooms + " at " + props + " is ready!";
@@ -125,7 +119,7 @@ function keyup(e) {
   inputTextValue = e.target.value;
 }
 
-// let textArea = JSON.parse(document.getElementById('customMessage').value);
+
 
 function GetInputValue() {
   document.getElementById("output").innerHTML = inputTextValue;
